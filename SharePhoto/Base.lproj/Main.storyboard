@@ -131,14 +131,54 @@
                     <view key="view" contentMode="scaleToFill" id="K92-E4-EPr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gorselSec" translatesAutoresizingMaskIntoConstraints="NO" id="wci-cW-qNn">
+                                <rect key="frame" x="20" y="138" width="374" height="238"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Yorum" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rwf-pW-u8E">
+                                <rect key="frame" x="20" y="417" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="hdr-j6-J7q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1M1-dF-2uI">
+                                <rect key="frame" x="143" y="495" width="129" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="hct-Q3-NqE"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Paylaş"/>
+                                <connections>
+                                    <action selector="uploadTappedButton:" destination="HK2-33-xkO" eventType="touchUpInside" id="Zzx-Dc-VZb"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="R6q-ke-boy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wci-cW-qNn" firstAttribute="leading" secondItem="rwf-pW-u8E" secondAttribute="leading" id="CE4-Yh-m4l"/>
+                            <constraint firstItem="rwf-pW-u8E" firstAttribute="top" secondItem="wci-cW-qNn" secondAttribute="bottom" constant="41" id="L8y-jk-BL9"/>
+                            <constraint firstItem="wci-cW-qNn" firstAttribute="top" secondItem="R6q-ke-boy" secondAttribute="top" constant="94" id="Wkx-h4-Y5P"/>
+                            <constraint firstItem="1M1-dF-2uI" firstAttribute="leading" secondItem="R6q-ke-boy" secondAttribute="leading" constant="143" id="c82-9C-g14"/>
+                            <constraint firstItem="1M1-dF-2uI" firstAttribute="top" secondItem="rwf-pW-u8E" secondAttribute="bottom" constant="44" id="d4c-BT-lTR"/>
+                            <constraint firstItem="R6q-ke-boy" firstAttribute="bottom" secondItem="1M1-dF-2uI" secondAttribute="bottom" constant="258" id="hhY-AF-YUe"/>
+                            <constraint firstItem="wci-cW-qNn" firstAttribute="trailing" secondItem="K92-E4-EPr" secondAttribute="trailingMargin" id="oSQ-eA-aAi"/>
+                            <constraint firstItem="wci-cW-qNn" firstAttribute="leading" secondItem="K92-E4-EPr" secondAttribute="leadingMargin" id="rid-Q3-Hw7"/>
+                            <constraint firstItem="rwf-pW-u8E" firstAttribute="centerX" secondItem="1M1-dF-2uI" secondAttribute="centerX" id="sNG-x2-RU7"/>
+                            <constraint firstItem="wci-cW-qNn" firstAttribute="trailing" secondItem="rwf-pW-u8E" secondAttribute="trailing" id="wLO-O7-nQP"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Upload" image="square.and.arrow.up.fill" catalog="system" id="gyy-c9-FCn"/>
+                    <connections>
+                        <outlet property="ImageView" destination="wci-cW-qNn" id="7im-Di-KGa"/>
+                        <outlet property="commentTextField" destination="rwf-pW-u8E" id="4gM-GS-U9D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vDt-rG-c2l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1245" y="454"/>
+            <point key="canvasLocation" x="1244.9275362318842" y="453.34821428571428"/>
         </scene>
         <!--Feed-->
         <scene sceneID="iLd-8t-JKP">
@@ -159,7 +199,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="y4N-uf-zNa">
             <objects>
-                <tabBarController id="cu0-Tu-dvl" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" id="cu0-Tu-dvl" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="yob-VQ-i4C"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NBD-mM-idx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -178,6 +218,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="gorselSec" width="1170" height="1085"/>
         <image name="mosaic.fill" catalog="system" width="128" height="114"/>
         <image name="seal.fill" catalog="system" width="128" height="128"/>
         <image name="square.and.arrow.up.fill" catalog="system" width="115" height="128"/>
