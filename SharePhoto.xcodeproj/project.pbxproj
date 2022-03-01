@@ -14,6 +14,9 @@
 		80302A6C27CD5DBD00C9E8E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80302A6B27CD5DBD00C9E8E5 /* Assets.xcassets */; };
 		80302A6F27CD5DBD00C9E8E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80302A6D27CD5DBD00C9E8E5 /* LaunchScreen.storyboard */; };
 		80302A7927CE3D9100C9E8E5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80302A7827CE3D9100C9E8E5 /* GoogleService-Info.plist */; };
+		80302A7B27CE55F500C9E8E5 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80302A7A27CE55F500C9E8E5 /* FeedViewController.swift */; };
+		80302A7D27CE561100C9E8E5 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80302A7C27CE561100C9E8E5 /* UploadViewController.swift */; };
+		80302A7F27CE562500C9E8E5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80302A7E27CE562500C9E8E5 /* SettingsViewController.swift */; };
 		E57D41333E85CA89BC1E22E9 /* Pods_SharePhoto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1143AC553AFDE922ADDB0118 /* Pods_SharePhoto.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +32,9 @@
 		80302A6E27CD5DBD00C9E8E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80302A7027CD5DBD00C9E8E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80302A7827CE3D9100C9E8E5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		80302A7A27CE55F500C9E8E5 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		80302A7C27CE561100C9E8E5 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		80302A7E27CE562500C9E8E5 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		ED49975A9659A9F902375217 /* Pods-SharePhoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharePhoto.debug.xcconfig"; path = "Target Support Files/Pods-SharePhoto/Pods-SharePhoto.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,7 +56,6 @@
 				ED49975A9659A9F902375217 /* Pods-SharePhoto.debug.xcconfig */,
 				29C98E93E2FCC424D0A14B12 /* Pods-SharePhoto.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -78,6 +83,9 @@
 				80302A6227CD5DBC00C9E8E5 /* AppDelegate.swift */,
 				80302A6427CD5DBC00C9E8E5 /* SceneDelegate.swift */,
 				80302A6627CD5DBC00C9E8E5 /* ViewController.swift */,
+				80302A7A27CE55F500C9E8E5 /* FeedViewController.swift */,
+				80302A7C27CE561100C9E8E5 /* UploadViewController.swift */,
+				80302A7E27CE562500C9E8E5 /* SettingsViewController.swift */,
 				80302A6827CD5DBC00C9E8E5 /* Main.storyboard */,
 				80302A6B27CD5DBD00C9E8E5 /* Assets.xcassets */,
 				80302A6D27CD5DBD00C9E8E5 /* LaunchScreen.storyboard */,
@@ -212,8 +220,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				80302A6727CD5DBC00C9E8E5 /* ViewController.swift in Sources */,
+				80302A7D27CE561100C9E8E5 /* UploadViewController.swift in Sources */,
 				80302A6327CD5DBC00C9E8E5 /* AppDelegate.swift in Sources */,
+				80302A7B27CE55F500C9E8E5 /* FeedViewController.swift in Sources */,
 				80302A6527CD5DBC00C9E8E5 /* SceneDelegate.swift in Sources */,
+				80302A7F27CE562500C9E8E5 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
