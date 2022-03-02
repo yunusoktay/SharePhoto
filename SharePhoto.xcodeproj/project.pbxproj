@@ -17,6 +17,7 @@
 		80302A7B27CE55F500C9E8E5 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80302A7A27CE55F500C9E8E5 /* FeedViewController.swift */; };
 		80302A7D27CE561100C9E8E5 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80302A7C27CE561100C9E8E5 /* UploadViewController.swift */; };
 		80302A7F27CE562500C9E8E5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80302A7E27CE562500C9E8E5 /* SettingsViewController.swift */; };
+		809D344427CF905A008933F0 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809D344327CF905A008933F0 /* FeedCell.swift */; };
 		E57D41333E85CA89BC1E22E9 /* Pods_SharePhoto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1143AC553AFDE922ADDB0118 /* Pods_SharePhoto.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		80302A7A27CE55F500C9E8E5 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		80302A7C27CE561100C9E8E5 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		80302A7E27CE562500C9E8E5 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		809D344327CF905A008933F0 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		ED49975A9659A9F902375217 /* Pods-SharePhoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharePhoto.debug.xcconfig"; path = "Target Support Files/Pods-SharePhoto/Pods-SharePhoto.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +88,7 @@
 				80302A7A27CE55F500C9E8E5 /* FeedViewController.swift */,
 				80302A7C27CE561100C9E8E5 /* UploadViewController.swift */,
 				80302A7E27CE562500C9E8E5 /* SettingsViewController.swift */,
+				809D344327CF905A008933F0 /* FeedCell.swift */,
 				80302A6827CD5DBC00C9E8E5 /* Main.storyboard */,
 				80302A6B27CD5DBD00C9E8E5 /* Assets.xcassets */,
 				80302A6D27CD5DBD00C9E8E5 /* LaunchScreen.storyboard */,
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				809D344427CF905A008933F0 /* FeedCell.swift in Sources */,
 				80302A6727CD5DBC00C9E8E5 /* ViewController.swift in Sources */,
 				80302A7D27CE561100C9E8E5 /* UploadViewController.swift in Sources */,
 				80302A6327CD5DBC00C9E8E5 /* AppDelegate.swift in Sources */,

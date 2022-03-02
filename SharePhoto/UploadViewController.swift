@@ -68,6 +68,10 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
                                         self.alertMessage(title: "Hata", message: error?.localizedDescription ?? "Hata Aldınız, Tekrar Deneyin!")
                                     } else {
                                         
+                                        self.commentTextField.text = ""
+                                        self.imageView.image = UIImage(named: "gorselSec")
+                                        self.tabBarController?.selectedIndex = 0
+                                        
                                     }
                                 }
                                 
